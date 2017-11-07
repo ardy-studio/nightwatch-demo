@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="firstTest.spec"
+    errors="1" failures="0" hostname="" id="" package="firstTest.spec" skipped="0"
+    tests="1" time="0.05000" timestamp="Tue, 07 Nov 2017 10:16:38 GMT">
+  
+    <testcase name="My first test" classname="firstTest.spec" time="0.05000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [First Test Spec / My first test]:
+
+  Error: Invalid URL: You must either add a url property to &quot;LoginForm&quot; or provide a url as an argument
+    at Object.navigate (C:\work\work\front-end-test\node_modules\nightwatch\lib\page-object\page.js:58:13)
+    at Object.My first test (C:\work\work\front-end-test\test\e2e\specs\firstTest.spec.js:44:8)
+    at Module.call (C:\work\work\front-end-test\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\work\work\front-end-test\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\work\work\front-end-test\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\work\work\front-end-test\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\work\work\front-end-test\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\work\work\front-end-test\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\work\work\front-end-test\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\work\work\front-end-test\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

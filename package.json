@@ -1,0 +1,41 @@
+{
+  "name": "front-end-test",
+  "version": "0.0.1",
+  "description": "",
+  "devDependencies": {
+    "react-scripts": "^1.0.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-hub": "^4.1.0",
+    "gulp-karma": "0.0.5",
+    "gulp-nightwatch": "^0.3.2",
+    "gulp-util": "^3.0.7",
+    "mocha": "^3.2.0",
+    "browser-sync": "^2.9.11",
+    "browser-sync-spa": "^1.0.3",
+    "nightwatch": "^0.9.14",
+    "nightwatch-helpers": "^1.2.0",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "selenium-server": "3.5.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "test:e2e": "gulp test"
+  }
+}

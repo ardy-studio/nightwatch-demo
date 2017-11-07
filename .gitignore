@@ -1,0 +1,20 @@
+# === Idea intelliJ ===
+**/.idea/
+**/*.iml
+*.ipr
+*.iws
+
+.npmrc
+Local State
+Default/
+
+# === Frontend ===
+node_modules/
+node/
+coverage/
+
+# === Log ===
+**/*.log
+
+
+
