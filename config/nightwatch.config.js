@@ -1,11 +1,10 @@
 // http://nightwatchjs.org/guide#settings-file
 let path = require('path')
+
 module.exports = {
   'src_folders': ['test/e2e/specs'],
   'output_folder': 'test/e2e/reports',
   'page_objects_path': 'test/pages',
-  'custom_commands_path': ['node_modules/nightwatch-helpers/commands'],
-  'custom_assertions_path': ['node_modules/nightwatch-helpers/assertions'],
 
   'selenium': {
     'start_process': true,

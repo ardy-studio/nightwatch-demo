@@ -3,14 +3,12 @@
  */
 const gulp = require('gulp');
 const nightwatch = require('gulp-nightwatch');
-// const reactScripts = require('react-scripts');
-const runSequence = require('run-sequence');
 
 gulp.task('test:e2e', function () {
   return gulp.src('')
     .pipe(nightwatch({
       configFile: 'config/nightwatch.config.js',
-      cliArgs: ['--env default', '--test test/e2e/specs/firstTest.spec.js']
+      cliArgs: ['--env default', '--test test/e2e/specs/todo.simple.spec.js']
     }))
     .on('error', function (e) {
       console.log("Error occur:")
@@ -19,8 +17,4 @@ gulp.task('test:e2e', function () {
       throw new Error('E2E Testcase failed!')
       this.emit('end')
     });
-});
-
-gulp.task('test', function (cb) {
-  runSequence('browsersync', 'test:e2e', 'browsersync:stop', cb)
 });
