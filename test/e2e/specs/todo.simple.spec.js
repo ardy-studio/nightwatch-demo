@@ -10,7 +10,7 @@ let todoInputList = [
 ];
 
 const addTodoByList = (browser, todoInputList) => {
-  todoInputList.map((todoInput, index) => {
+  todoInputList.map((todoInput) => {
     browser
       .clearValue('#todoInput')
       .setValue('#todoInput', todoInput)

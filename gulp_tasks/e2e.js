@@ -4,7 +4,7 @@
 const gulp = require('gulp');
 const nightwatch = require('gulp-nightwatch');
 
-gulp.task('test:e2e', function () {
+gulp.task('test:simple', function () {
   return gulp.src('')
     .pipe(nightwatch({
       configFile: 'config/nightwatch.config.js',
@@ -13,8 +13,23 @@ gulp.task('test:e2e', function () {
     .on('error', function (e) {
       console.log("Error occur:")
       console.log(e)
-      console.log('E2E Testcase failed!')
-      throw new Error('E2E Testcase failed!')
+      console.log('Testcase failed!')
+      throw new Error('Testcase failed!')
+      this.emit('end')
+    });
+});
+
+gulp.task('test:po', function () {
+  return gulp.src('')
+    .pipe(nightwatch({
+      configFile: 'config/nightwatch.config.js',
+      cliArgs: ['--env default', '--test test/e2e/specs/todo.page.object.spec.js']
+    }))
+    .on('error', function (e) {
+      console.log("Error occur:")
+      console.log(e)
+      console.log('Testcase failed!')
+      throw new Error('Testcase failed!')
       this.emit('end')
     });
 });
